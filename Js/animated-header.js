@@ -31,7 +31,7 @@ setInterval(() => {
 const imagesMain = document.getElementById("images-gallery");
 for(var i = 1; i<images_main.length; i++){
     const img = document.createElement('img');
-    img.src = "/images/"+images_main[i];
+    img.src = "../images/"+images_main[i];
     img.alt = images_main[i]+".jpg";
     imagesMain.appendChild(img);
 }
