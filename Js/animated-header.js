@@ -24,14 +24,14 @@ setInterval(() => {
     index = (index + 1) % images.length;
     backgroundDiv.style.background = `
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), 
-    url('../images/Scenery/${images[index]}') center/cover no-repeat fixed
+    url('/Portfolio/images/Scenery/${images[index]}') center/cover no-repeat fixed
   `;
 }, 10000); // changes every 10 seconds
 
 const imagesMain = document.getElementById("images-gallery");
 for(var i = 1; i<images_main.length; i++){
     const img = document.createElement('img');
-    img.src = "../images/"+images_main[i];
+    img.src = "/Portfolio/images/"+images_main[i];
     img.alt = images_main[i]+".jpg";
     imagesMain.appendChild(img);
 }
