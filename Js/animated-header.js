@@ -2,14 +2,14 @@ const images = [];
 const images_main = [];
 for (let i = 1; i <= 20; i++) {
     if (i <= 10) {
-        images.push(`scenery${i}.jpg`);
-        images_main.push(`Scenery/scenery${i}.jpg`);
+        images.push(`Scenery${i}.jpg`);
+        images_main.push(`Scenery/Scenery${i}.jpg`);
     }
     if (i <= 7) {
         images_main.push(`Macro/macro${i}.jpg`);
     }
     if (i <= 11) {
-        images_main.push(`Potraits/Potraits${i}.jpg`);
+        images_main.push(`Potraits/potraits${i}.jpg`);
     }
     if (i <= 10) {
         images_main.push(`Random/Random${i}.jpg`);
